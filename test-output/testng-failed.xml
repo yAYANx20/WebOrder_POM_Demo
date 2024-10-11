@@ -5,16 +5,18 @@
   <parameter name="browserType" value="chrome"/>
   <test thread-count="5" name="test-1(failed)">
     <classes>
-      <class name="com.WebOrder.test.WebOrder_ViewAllOrders_Test">
+      <class name="com.WebOrder.test.WebOrders_Login">
         <methods>
+          <include name="verifyText"/>
           <include name="SetUp"/>
           <include name="tearDown"/>
           <include name="takeScreenshot"/>
-          <include name="setUp"/>
-          <include name="verifyError" invocation-numbers="10 11"/>
+          <include name="loginTest"/>
+          <include name="urlTest"/>
           <include name="initializeTestBaseSetup"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.WebOrder.test.WebOrder_ViewAllOrders_Test -->
+      </class> <!-- com.WebOrder.test.WebOrders_Login -->
     </classes>
   </test> <!-- test-1(failed) -->
 </suite> <!-- Failed suite [Page Object test example] -->
